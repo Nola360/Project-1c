@@ -12,9 +12,9 @@ body {
   z-index: 1;
   width: 0;
   padding-top: 60px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   position: fixed;
-  transition: 0.3s;
+  transition: 0.5s;
   top: 0;
   left: 0;
 }
@@ -22,7 +22,7 @@ body {
 .sideMenu .close {
   position: absolute;
   top: 0;
-  left: 25px;
+  right: 25px;
   margin-left: 50px;
   font-size: 95px;
 }
@@ -50,9 +50,9 @@ body {
   left: 0%;
   width: 0;
   height: 50px;
-  background: #cfc;
+  background: rgb(2, 233, 2);
   z-index: -1;
-  transition: 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
   content: ''
 }
 
