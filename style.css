@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  background: #eaf;
+  overflow: hidden; 
+}
+
+
+/* SIDE MENU STYLE */
+.sideMenu {
+  height: 100%;
+  background: #ccc;
+  z-index: 1;
+  width: 0;
+  padding-top: 60px;
+  /* overflow-x: hidden; */
+  position: fixed;
+  transition: 0.3s;
+  top: 0;
+  left: 0;
+}
+
+.sideMenu .close {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  margin-left: 50px;
+  font-size: 95px;
+}
+
+.sideMenu a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 64px;
+  letter-spacing: 5px;
+  padding: 4px 4px 4px 16px;
+  margin-bottom: 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+.sideMenu-wrapper {
+ margin-top: 100px;
+}
+
+
+/* SIDE MENU EFFECTS */
+.sideMenu-wrapper a:after {
+  position: absolute;
+  left: 0%;
+  width: 0;
+  height: 50px;
+  background: #cfc;
+  z-index: -1;
+  transition: 0.35s ease-in-out;
+  content: ''
+}
+
+.sideMenu-wrapper a:hover {
+padding-left: 64px;
+transition: 0.35s ease-in-out;
+}
+
+.sideMenu-wrapper a:hover:after {
+    width: 10%;
+}
+
+/* CONTENT STYLES */
+#page-content {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+h1 {
+  color: orange;
+  font-size: 8em;
+  letter-spacing: 12px;
+  padding: 30px;
+  text-align: center;
+  
+}
+
+span {
+  letter-spacing: 5px;
+  padding: 44px;
+  color: steelblue;
+  
+}
+
